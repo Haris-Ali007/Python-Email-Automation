@@ -42,7 +42,8 @@ contacts = get_contacts()
 #get message body
 message = get_message()
 
-#connecting with smtp server 
+#connecting with smtp server
+#host and port for connecting with an outlook smtps server
 smtp_obj = create_conn(host= 'smtp-mail.outlook.com', port= 587)
 smtp_obj.login(email, pswd)
 
